@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/logo1000.png" type="image/x-icon">
+    <script src="js/topnav.js"></script>
+    <title>Remaxxima</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <center><a href="index.html"><img src="img/logo500.png"></a></center>
+        </div>
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html" class="active">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content3">
+            <div class="linha-form">
+                <div class="form">
+                    <form action="" method="POST" onsubmit="redirecionar(event)">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa">
+                    
+                        <label for="website">Website:</label>
+                        <input type="url" id="website" name="website">
+                    
+                        <label for="servicos">Serviços de interesse:</label>
+                        <select id="servicos" name="servicos[]" multiple required>
+                            <option value="SEO">SEO</option>
+                            <option value="Marketing de Conteúdo">Marketing de Conteúdo</option>
+                            <option value="Redes Sociais">Redes Sociais</option>
+                            <option value="Publicidade Online">Publicidade Online</option>
+                            <option value="Design Gráfico">Design Gráfico</option>
+                            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                            <option value="Email Marketing">Email Marketing</option>
+                            <option value="Marketing de Influência">Marketing de Influência</option>
+                            <option value="Gestão de Campanhas">Gestão de Campanhas</option>
+                        </select>
+                    
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    
+                        <label for="orcamento">Orçamento disponível:</label>
+                        <input type="text" id="orcamento" name="orcamento">
+                    
+                        <label for="prazo">Prazo desejado:</label>
+                        <input type="text" id="prazo" name="prazo">
+                    
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <script>
+                        function redirecionar(event) {
+                            event.preventDefault(); // Impede o envio do formulário
+                            // Redirecionar para a página de conclusão do envio
+                            window.location.href = "orçamento-solicitado.html";
+                        }
+                    </script>
+                    
+                </div>
+                <div class="informacoes-contato">
+                    <h2>Informações de Contato</h2>
+                    <p><strong>Telefone:</strong> (00) 1234-5678</p>
+                    <p><strong>Email:</strong> info@remaxxima.com</p>
+                    <p><strong>Endereço:</strong> Av. Principal, 1234 - Cidade, Estado</p>
+                    <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 9h às 18h</p>
+                    <p><strong>Redes Sociais:</strong></p>
+                    <ul>
+                        <li><a href="placeholder-sites-clientes.html">Facebook</a></li>
+                        <li><a href="placeholder-sites-clientes.html">Twitter</a></li>
+                        <li><a href="placeholder-sites-clientes.html">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <center><p>2023 - Todos os Direitos Reservados</p></center>
+            </div>
+        </div>
+</body>
+</html>

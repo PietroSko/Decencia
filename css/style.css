@@ -1,0 +1,342 @@
+p {
+    padding: 10px;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+    float: left;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(27, 27, 27);
+    float: left;
+}
+
+.content{
+    width: 100%;
+    height: 1300px;
+    background-color: #ccc;
+    float: left;
+}
+
+.content2{
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    float: left;
+}
+
+.content3{
+    width: 100%;
+    height: 650px;
+    background-color: #ccc;
+    float: left;
+}
+
+.linha-1{
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+
+.linha-1perf{
+    width: auto;
+    height: 1810px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+.foto{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+.coluna-1{
+    width: 100%;
+    height: 33%;
+    background-color: rgb(221, 221, 221);
+    float: left;
+}
+
+.coluna-2{
+    width: 100%;
+    height: ;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+
+.coluna-direitos{
+    width: 100%;
+    height: 3%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+
+
+.linha-2{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #ffffff, #bbbbbb);
+    float: left;
+}
+
+
+
+
+
+
+.linha-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.coluna-6, .coluna-7 {
+    flex: 1;
+}
+
+.imagem-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.linha-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form{
+    width: 100%;
+    height: 650px;
+    float: left;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #AC43D9;
+    float: left;
+}
+
+
+@media screen and (max-width: 600px){
+    .container, .header, .navbar, .content, .footer {
+        width: 100%;
+    }
+}
+
+input[type=submit]:hover {
+    background-color: #EE05F2;
+  }
+  
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor de fundo do botão */
+    color: #FFFFFF; /* Cor do ícone */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 53px;
+    font-size: 30px;
+    z-index: 999;
+  }
+  
+  .floating-button:hover {
+    background-color: #128C7E; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+
+
+  /* Estilos para a coluna-3 */
+.coluna-3 {
+    width: auto;
+    padding: 20px;
+}
+
+.coluna-3 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.coluna-3 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.coluna-3 li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para os depoimentos */
+.depoimento {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.depoimento-imagem {
+    flex: 0 0 30%;
+}
+
+.depoimento-imagem img {
+    width: 100%;
+    border-radius: 30%;
+}
+
+.depoimento-conteudo {
+    flex: 0 0 70%;
+    padding-left: 20px;
+}
+
+.depoimento-conteudo h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.depoimento-conteudo p.comentario {
+    background-color: #b86bda;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 500px;
+    font-size: 20px;
+}
+
+.depoimento-imagem.direita {
+    text-align: right;
+}
+
+/* Estilos para a coluna-5 */
+.coluna-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coluna-5 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFA000;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+.informacoes-contato {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
