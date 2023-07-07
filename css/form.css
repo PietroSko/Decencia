@@ -13,12 +13,13 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #AB05F2;
+input {
+
   color: white;
   padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width:  100%;
   cursor: pointer;
 }
 

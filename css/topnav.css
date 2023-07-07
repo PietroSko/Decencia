@@ -25,6 +25,11 @@
     background-color: #AB05F2;
     color: white;
   }
+
+  .topnav a.active:hover {
+    box-shadow: 0 0 20px #AB05F2;
+    transition: 0.5s;
+  }
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {

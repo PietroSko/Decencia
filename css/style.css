@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Figtree&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Figtree';
+}
+
+body, html{
+    margin: 0;
+}
+
+
 p {
     padding: 10px;
 }
 
+li, p, h1, h2, h3, h4{
+    font-size: x-large !important;
+}
+
 .container{
-    width: 1200px;
+    width: 100vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -25,22 +41,22 @@ p {
 
 .content{
     width: 100%;
-    height: 1300px;
-    background-color: #ccc;
+    height: auto;
+    background-color: #ffffff;
     float: left;
 }
 
 .content2{
     width: 100%;
     height: auto;
-    background-color: #ccc;
+    background-color: #ffffff;
     float: left;
 }
 
 .content3{
     width: 100%;
     height: 650px;
-    background-color: #ccc;
+    background-color: #ffffff;
     float: left;
 }
 
@@ -68,7 +84,7 @@ p {
 
 .coluna-1{
     width: 100%;
-    height: 33%;
+
     background-color: rgb(221, 221, 221);
     float: left;
 }
@@ -93,7 +109,7 @@ p {
 .linha-2{
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, #ffffff, #bbbbbb);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     float: left;
 }
 
@@ -166,7 +182,10 @@ p {
 
 
 
-
+.owo{
+    height: 70px;
+    width: 100%;
+}
 
 
 
@@ -198,15 +217,21 @@ p {
     height: 650px;
     float: left;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     padding: 20px;
 }
 
 .footer{
+    margin-top: 70px;
     width: 100%;
     height: 50px;
     background-color: #AC43D9;
     float: left;
+}
+
+.footer p{
+    margin: 0 !important;
+    color: #ffffff;
 }
 
 
@@ -273,7 +298,7 @@ input[type=submit]:hover {
 
 .depoimento-imagem img {
     width: 100%;
-    border-radius: 30%;
+    border-radius: 5%;
 }
 
 .depoimento-conteudo {
@@ -287,15 +312,22 @@ input[type=submit]:hover {
 }
 
 .depoimento-conteudo p.comentario {
-    background-color: #b86bda;
+    /*background-color: #b86bda;*/
     padding: 10px;
     border-radius: 5px;
-    max-width: 500px;
+    max-width: 70%;
     font-size: 20px;
 }
 
 .depoimento-imagem.direita {
     text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.depoimento-imagem.direita img{
+    width: 100%;
+    height: auto;
 }
 
 /* Estilos para a coluna-5 */
@@ -313,7 +345,7 @@ input[type=submit]:hover {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FFC107;
+    background-color: #b86bda;
     color: #FFF;
     text-decoration: none;
     font-weight: bold;
@@ -322,7 +354,7 @@ input[type=submit]:hover {
 }
 
 .cta-button:hover {
-    background-color: #FFA000;
+    background-color: #b86bda;
 }
 
 
@@ -334,9 +366,9 @@ input[type=submit]:hover {
 
 
 .informacoes-contato {
-    max-width: 600px;
+    margin-top: 210px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
